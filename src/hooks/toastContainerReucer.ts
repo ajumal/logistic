@@ -1,6 +1,6 @@
 import { Id } from '../types';
 
-import { isToastIdValid } from '../utils';
+import { isToastIdValid } from '../utils/propValidator';
 
 export const enum ActionType {
   ADD,

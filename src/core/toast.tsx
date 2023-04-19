@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { render } from 'react-dom';
-
-import { POSITION, TYPE, canUseDom, isStr, isNum, isFn } from '../utils';
+import { POSITION,TYPE } from '../utils/constant';
+import { isStr,isNum,isFn,canUseDom } from '../utils/propValidator';
 import { eventManager, OnChangeCallback, Event } from './eventManager';
 import {
   ToastContent,
@@ -13,7 +13,7 @@ import {
   ClearWaitingQueueParams,
   NotValidatedToastProps
 } from '../types';
-import { ContainerInstance } from 'hooks';
+import { ContainerInstance } from "../hooks";
 import { ToastContainer } from '../components';
 
 interface EnqueuedToast {

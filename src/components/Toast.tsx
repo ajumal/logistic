@@ -3,7 +3,8 @@ import cx from 'clsx';
 
 import { ProgressBar } from './ProgressBar';
 import { ToastProps } from '../types';
-import { Default, isFn } from '../utils';
+import { Default} from '../utils/constant';
+import { isFn } from '../utils/propValidator';
 import { useToast } from '../hooks';
 
 export const Toast: React.FC<ToastProps> = props => {

@@ -6,7 +6,7 @@ import {
     DOMAttributes
   } from 'react';
   
-  import { isFn } from '../utils';
+  import { isFn } from '../utils/propValidator';
   import { ToastProps } from '../types';
   import { useKeeper } from './useKeeper';
   import { Direction } from '../utils/constant';

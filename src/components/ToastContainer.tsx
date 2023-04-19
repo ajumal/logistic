@@ -4,7 +4,9 @@ import cx from 'clsx';
 import { Toast } from './Toast';
 import { CloseButton } from './CloseButton';
 import { Bounce } from './Transitions';
-import { POSITION, Direction, Default, parseClassName, isFn } from '../utils';
+import { parseClassName, isFn } from '../utils/propValidator';
+import { Direction,Default } from '../utils/constant';
+import { POSITION } from '../utils/constant';
 import { useToastContainer } from '../hooks';
 import { ToastContainerProps, ToastPosition } from '../types';
 

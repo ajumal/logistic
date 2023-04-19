@@ -13,10 +13,9 @@ import {
     isNum,
     isStr,
     isToastIdValid,
-    getAutoCloseDelay,
-    Direction,
-    Default
-  } from '../utils';
+    getAutoCloseDelay
+  } from '../utils/propValidator';
+  import { Direction,Default } from '../utils/constant';
   import { eventManager, Event } from '../core/eventManager';
   
   import {

@@ -1,7 +1,9 @@
 import * as React from 'react';
 import cx from 'clsx';
 
-import { TYPE, Default, isFn } from './../utils';
+import { TYPE } from './../utils/constant';
+import { Default } from '../utils/constant';
+import { isFn } from '../utils/propValidator';
 import { TypeOptions, ToastClassName } from '../types';
 
 export interface ProgressBarProps {

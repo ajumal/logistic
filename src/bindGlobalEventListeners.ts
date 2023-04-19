@@ -48,7 +48,7 @@ export function onDocumentMouseMove(): void {
 export function onWindowBlur(): void {
   const activeElement = document.activeElement as HTMLElement | null;
 
-  if (isReferenceElement(activeElement)) {
+  if (activeElement&&isReferenceElement(activeElement)) {
     const instance = activeElement._tippy!;
 
     if (activeElement.blur && !instance.state.isVisible) {
